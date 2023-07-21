@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing Book</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <!-- Your header content goes here -->
+        <h1>Drawing Book</h1>
+    </header>
+
+    <main>
+        <!-- Main content goes here -->
+        <section class="drawing-canvas">
+            <!-- The canvas element where the user can draw -->
+            <canvas id="canvas" width="800" height="500"></canvas>
+        </section>
+
+        <section class="drawing-controls">
+            <!-- Drawing controls, e.g., pen size, colors, clear button, etc. -->
+            <div class="pen-size">
+                <label for="penSize">Pen Size:</label>
+                <input type="range" id="penSize" min="1" max="10" value="5">
+            </div>
+
+            <div class="pen-color">
+                <label for="penColor">Pen Color:</label>
+                <input type="color" id="penColor" value="#000000">
+            </div>
+
+            <button id="clearCanvas">Clear Canvas</button>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Your footer content goes here -->
+        <p>&copy; 2023 Amay Jain. All rights reserved.</p>
+    </footer>
+
+    <!-- Add your JavaScript file here -->
+    <script src="script.js"></script>
+</body>
+
+</html>
